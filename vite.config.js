@@ -3,5 +3,13 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  build: {
+    outDir: "dist",
+  },
+
+  server: {
+    open: true,
+  },
+
   plugins: [tailwindcss()],
 });
