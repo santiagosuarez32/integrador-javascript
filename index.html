@@ -1,0 +1,662 @@
+<!doctype html>
+<html>
+<head>
+  <title>Unique Gamers | Tu tienda Gamer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/index.css" rel="stylesheet">
+  <link rel="icon" href="./img/descarga.png">
+  <script src="./main.js"></script>
+</head>
+<body  class="bg-gray-900">
+  <!-- HEADER -->
+  <header class="bg-white dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600 dark:text-teal-600" href="#">
+            <span class="sr-only">Home</span>
+            <img class="h-12" src="./img/descarga.png" alt="Logo">
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <nav aria-label="Global">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  href="#about-us-section"
+                >
+                  Nosotros
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  href="#products-section"
+                >
+                  Productos
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  href="#"
+                >
+                  Contáctanos
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  href="#"
+                >
+                  Ubicación
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class=" hidden sm:flex sm:gap-4">
+            <a
+              class="rounded-md bg-red-600 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-300"
+              href="#"
+            >
+              Iniciar Sesión
+            </a>
+            <div class="hidden sm:flex">
+              <a
+                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                href="#"
+              >
+                Registrarse
+              </a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+            >
+              <svg
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- SECTION CARD-HEADER -->
+  <section class="bg-white dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-30 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-red-500">Tu tienda Gaming</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-white">
+              Los mejores precios y productos para que tengas una experiencia gaming única, con los productos de primera calidad, con la mejor garantía y seguridad en tu compra
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700">
+                Descubre
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="#products-section" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-red-300 rounded-lg hover:bg-red-100 focus:ring-4 focus:ring-red-100 dark:text-white dark:border-red-700 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                Ofertas Imperdibles
+            </a>
+        </div>
+        <div class=" lg:flex lg:col-span-5 lg:justify-end lg:items-center py-3">
+            <img src="./img/descarga.png" alt="mockup" class="max-w-full h-auto">
+        </div>
+    </div>
+</section>
+<!-- SECTION ABOUT US -->
+<section id="about-us-section">
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+    <h2 class="mb-8 text-3xl font-bold md:text-5xl lg:mb-14 text-white"> ¿Que es <span class="text-red-500">Unique Gamers</span>? </h2>
+    <p class="mb-8 max-w-lg text-sm text-white sm:text-base lg:mb-4"> En <span class="text-red-500">Unique Gamers</span>, nos dedicamos a llevar tu experiencia de juego al siguiente nivel. Somos una empresa especializada en la venta de hardware de alta calidad para PC y productos relacionados con el gaming. Nuestro compromiso es ofrecerte los mejores componentes y accesorios para que disfrutes de una experiencia gaming única, con el máximo rendimiento y la más avanzada tecnología. </p>
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
+      <br>
+      <div class="flex flex-col gap-5 rounded-2xl border border-solid border-red-600 p-10 sm:p-20">
+        <h2 class="text-3xl font-bold md:text-5xl text-white">Nuestra misión</h2>
+        <p class="text-sm text-white sm:text-base"> En Unique Gamers, nuestra misión es ofrecerte el mejor hardware para PC y productos gaming. Solo trabajamos con las marcas más confiables, incorporamos las últimas tendencias tecnológicas, brindamos un servicio al cliente excepcional con asesoramiento experto y fomentamos una comunidad apasionada por el gaming.
+          <br />
+          <br /> ¡Adentrate en el mundo gaming con la mejor asesoria!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION PRODUCTS -->
+<section id="products-section" class="flex items-center justify-center flex-col "> 
+
+  <div>
+    <div class="p-15 mx-auto lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 sm:mb-10 text-center">Componentes Hardware Gaming</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
+        <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+          <div class="mb-4 bg-gray-100 rounded p-2">
+            <img src="./img/ryzen-5600.jpg" alt="Product 1"
+            class="aspect-[33/35] w-full object-contain" />
+          </div>
+          
+          <div>
+            <div class="flex gap-2">
+              <h5 class="text-base font-bold text-gray-800">AMD Ryzen</h5>
+              <h6 class="text-base text-gray-800 font-bold ml-auto">$10</h6>
+            </div>
+            <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="flex items-center gap-2 mt-4">
+              <div
+              class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                <path
+                d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                data-original="#000000"></path>
+              </svg>
+            </div>
+            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/memory.jpg" alt="Product 2"
+            class="aspect-[33/35] w-full object-contain" />
+        </div>
+
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Memoria Ram</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$12</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+      <div class="mb-4 bg-gray-100 rounded p-2">
+        <img src="./img/placa-madre.jpg" alt="Product 3"
+        class="aspect-[33/35] w-full object-contain" />
+      </div>
+      
+      <div>
+        <div class="flex gap-2">
+          <h5 class="text-base font-bold text-gray-800">Placa Madre</h5>
+          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+        </div>
+        <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="flex items-center gap-2 mt-4">
+          <div
+          class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+            <path
+            d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+            data-original="#000000"></path>
+          </svg>
+        </div>
+        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+    <div class="mb-4 bg-gray-100 rounded p-2">
+      <img src="./img/gabinete.jpg" alt="Product 3"
+      class="aspect-[33/35] w-full object-contain" />
+    </div>
+    
+    <div>
+      <div class="flex gap-2">
+        <h5 class="text-base font-bold text-gray-800">Gabinete</h5>
+        <h6 class="text-base text-gray-800 font-bold ml-auto">$12</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+              class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"></path>
+                </svg>
+              </div>
+              <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+            </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/tarjeta-de-video.jpg" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Tarjeta Gráfica</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$15</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+      <div class="mb-4 bg-gray-100 rounded p-2">
+        <img src="./img/fuente-de-poder.webp" alt="Product 3"
+        class="aspect-[33/35] w-full object-contain" />
+      </div>
+      
+      <div>
+        <div class="flex gap-2">
+          <h5 class="text-base font-bold text-gray-800">Fuente de poder</h5>
+          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+        </div>
+        <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="flex items-center gap-2 mt-4">
+          <div
+          class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"></path>
+              </svg>
+            </div>
+            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/m.2.png" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+      <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/m.2.png" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+      </div>
+      <div  id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/m.2.png" alt="Product 3"
+            class="aspect-[33/35] w-full object-contain" />
+        </div>
+
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div> 
+    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden ">
+      <div class="mb-4 bg-gray-100 rounded p-2">
+        <img src="./img/m.2.png" alt="Product 3"
+        class="aspect-[33/35] w-full object-contain" />
+      </div>
+      
+      <div>
+        <div class="flex gap-2">
+          <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+        </div>
+        <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+        <div class="flex items-center gap-2 mt-4">
+          <div
+          class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+            <path
+            d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+            data-original="#000000"></path>
+          </svg>
+        </div>
+        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+    <div class="mb-4 bg-gray-100 rounded p-2">
+      <img src="./img/m.2.png" alt="Product 3"
+      class="aspect-[33/35] w-full object-contain" />
+    </div>
+
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+      <div class="mb-4 bg-gray-100 rounded p-2">
+        <img src="./img/m.2.png" alt="Product 3"
+        class="aspect-[33/35] w-full object-contain" />
+      </div>
+      
+      <div>
+        <div class="flex gap-2">
+          <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+        </div>
+        <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+        <div class="flex items-center gap-2 mt-4">
+          <div
+          class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+            <path
+            d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+            data-original="#000000"></path>
+          </svg>
+        </div>
+        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden ">
+    <div class="mb-4 bg-gray-100 rounded p-2">
+      <img src="./img/m.2.png" alt="Product 3"
+      class="aspect-[33/35] w-full object-contain" />
+    </div>
+    
+    <div>
+      <div class="flex gap-2">
+        <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"></path>
+              </svg>
+            </div>
+            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative   hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/m.2.png" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+      <div class="mb-4 bg-gray-100 rounded p-2">
+        <img src="./img/m.2.png" alt="Product 3"
+        class="aspect-[33/35] w-full object-contain" />
+      </div>
+      
+      <div>
+        <div class="flex gap-2">
+          <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
+          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+        </div>
+        <p class="text-gray-500 text-[13px] mt-2">Disco M.2</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+              class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"></path>
+              </svg>
+            </div>
+            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/monitor.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/monitor.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/monitor.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/monitor.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/monitor.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
+        </div>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+          </div>
+          <p class="text-gray-500 text-[13px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="flex items-center gap-2 mt-4">
+            <div
+            class="bg-pink-100 hover:bg-pink-200 w-12 h-9 flex items-center justify-center rounded cursor-pointer" title="Wishlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" class="fill-pink-600 inline-block" viewBox="0 0 64 64">
+              <path
+              d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+              data-original="#000000"></path>
+            </svg>
+          </div>
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="p-7" id="load-more-button" >
+  <div class="p-2">
+    <button class="bg-red-500 hover:bg-red-700 text-white font-bold   py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+      Cargar Más
+    </button>
+  </div>
+</div>
+</section>
+</body>
+</html>
