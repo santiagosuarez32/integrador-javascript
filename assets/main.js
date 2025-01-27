@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
 
   loadMoreButton.addEventListener("click", function () {
-    for (let i = 0; i < 8 && currentIndex < cards.length; i++) {
+    for (let i = 0; i < 4 && currentIndex < cards.length; i++) {
       cards[currentIndex].classList.remove("hidden");
       currentIndex++;
     }
