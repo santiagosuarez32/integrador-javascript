@@ -17,3 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const buttonTodos = document
+  .getElementById("todos")
+  .addEventListener("click", function () {
+    console.log("holaa");
+  });
