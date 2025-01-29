@@ -129,7 +129,10 @@
     <p class="mb-8 max-w-lg text-sm text-white sm:text-base lg:mb-4"> En <span class="text-red-500">Unique Gamers</span>, nos dedicamos a llevar tu experiencia de juego al siguiente nivel. Somos una empresa especializada en la venta de hardware de alta calidad para PC y productos relacionados con el gaming. Nuestro compromiso es ofrecerte los mejores componentes y accesorios para que disfrutes de una experiencia gaming única, con el máximo rendimiento y la más avanzada tecnología. </p>
     <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
       <br>
-      <div class="flex flex-col gap-5 rounded-2xl border border-solid border-red-600 p-10 sm:p-20">
+      
+      <div id="card-wrapper" class="relative flex flex-col gap-5 border-4 border-transparent p-10 sm:p-0.5 rounded-xl overflow-hidden">
+        <div class="absolute inset-0 bg-animated-gradient-border rounded-xl"></div>
+        <div class="relative z-10 flex flex-col gap-5 p-10 sm:p-20 bg-gray-900 rounded-xl">
         <h2 class="text-3xl font-bold md:text-5xl text-white">Nuestra misión</h2>
         <p class="text-sm text-white sm:text-base"> En Unique Gamers, nuestra misión es ofrecerte el mejor hardware para PC y productos gaming. Solo trabajamos con las marcas más confiables, incorporamos las últimas tendencias tecnológicas, brindamos un servicio al cliente excepcional con asesoramiento experto y fomentamos una comunidad apasionada por el gaming.
           <br />
@@ -504,3 +507,8 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
 
 </body>
 </html>
+
+
+<div id="card-wrapper" class="relative flex flex-col gap-5 border-4 border-transparent p-10 sm:p-20 rounded-2xl overflow-hidden">
+  <div class="absolute inset-0 bg-animated-gradient-border rounded-2xl"></div>
+  <div class="relative z-10 flex flex-col gap-5 p-10 sm:p-20 bg-gray-900 rounded-2xl">

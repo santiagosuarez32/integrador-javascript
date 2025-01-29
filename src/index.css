@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+
+/* @layer utilities {
+    #card-wrapper{
+        @apply relative bg-gradient-to-b from-slate-700 to-slate-800
+    }
+
+    #card-wrapper::before{
+        background: conic-gradient(
+            rgba(244, 114,182, 0.4) 0deg,
+            rgba(192,132,252,0.4)0deg
+            transparent 80deg
+        );
+
+      @apply absolute h-[100%] w-[100%] content-[''] animate-border-spin;
+    }
+
+    #card-content{
+
+    } */
+    @keyframes gradientBorderAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
+      .bg-animated-gradient-border {
+        background: linear-gradient(270deg, #ef4444, #d1d2db, #ef4444);
+        background-size: 600% 600%;
+        animation: gradientBorderAnimation 8s ease infinite;
+      }
+      
+      
