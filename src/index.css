@@ -32,9 +32,9 @@
       }
       
       .bg-animated-gradient-border {
-        background: linear-gradient(270deg, #ef4444, #d1d2db, #ef4444);
+        background: linear-gradient(270deg, #ef2222, #1A202C, #ef4444);
         background-size: 600% 600%;
-        animation: gradientBorderAnimation 8s ease infinite;
+        animation: gradientBorderAnimation 6s ease infinite;
       }
       
       
