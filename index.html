@@ -100,7 +100,7 @@
     </div>
   </header>
   <!-- SECTION CARD-HEADER -->
-  <section class=" bg-gray-900 flex items-center justify-center flex-col h-[90vh] md:mt-20">
+  <section class=" bg-gray-900 flex items-center justify-center flex-col  md:mt-20">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-30 lg:grid-cols-12 text-center">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-500">Tu tienda Gaming</h1>
@@ -123,7 +123,7 @@
     </div>
 </section>
 <!-- SECTION ABOUT US -->
-<section id="about-us-section" class="flex items-center h-[100vh]"  >
+<section id="about-us-section" class="flex items-center"  >
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
     <h2 class="mb-8 text-3xl font-bold md:text-5xl lg:mb-14 text-white"> ¿Que es <span class="text-red-500">Unique Gamers</span>? </h2>
     <p class="mb-8 max-w-lg text-sm text-white sm:text-base lg:mb-4"> En <span class="text-red-500">Unique Gamers</span>, nos dedicamos a llevar tu experiencia de juego al siguiente nivel. Somos una empresa especializada en la venta de hardware de alta calidad para PC y productos relacionados con el gaming. Nuestro compromiso es ofrecerte los mejores componentes y accesorios para que disfrutes de una experiencia gaming única, con el máximo rendimiento y la más avanzada tecnología. </p>
@@ -145,8 +145,8 @@
 
 
 <!-- SECTION PRODUCTS -->
-<section id="products-section" class="flex items-center justify-center flex-col min-h-screen"> 
-  <div id="productos">
+<section id="products-section" class="items-center justify-center flex-col min-h-screen hidden lg:flex md:flex"> 
+  <div id="productos" class="hidden lg:block md:block">
     <div class="p-15 mx-auto lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 sm:mb-10 text-center">Componentes Hardware Gaming</h2>
       <div id="buttons" class="flex items-center justify-center mb-15 gap-1.5 flex-wrap  " >
@@ -235,7 +235,6 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
           <div class="flex items-center gap-2 mt-4">
             
           <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-          
         </div>
       </div>
     </div>
