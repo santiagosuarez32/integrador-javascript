@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/index.css" rel="stylesheet">
   <link rel="icon" href="./img/descarga.png">
- 
- 
 </head>
 <body  class="bg-gray-900">
   <!-- HEADER -->
@@ -102,7 +100,7 @@
   <!-- SECTION CARD-HEADER -->
   <section class=" bg-gray-900 flex items-center justify-center flex-col  md:mt-20">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-30 lg:grid-cols-12 text-center">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto place-self-center lg:col-span-7 ">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-500">Tu tienda Gaming</h1>
             <p class="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl text-white">
               Los mejores precios y productos para que tengas una experiencia gaming única, con los productos de primera calidad, con la mejor garantía y seguridad en tu compra
@@ -114,9 +112,9 @@
                   <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                 </svg>
             </a>
-            <a href="#products-section" class="inline-flex items-center justify-center px-0.5 py-0.5 text-base font-medium text-center  rounded-lg focus:ring-4  text-whit relative flex-col gap-5 border-4  border-transparent  overflow-hidden sm:rounded-b-sm z-10">
+            <a href="#products-section" class="inline-flex items-center justify-center px-0.5 py-0.5 text-base font-medium text-center  rounded-lg   text-whit relative flex-col gap-5 border-0  border-transparent  overflow-hidden sm:rounded-b-sm z-10 ">
               <div class="absolute inset-0 bg-animated-gradient-border rounded-2xl"></div>
-              <p class="relative z-10 flex flex-col gap-0.5 p-5 sm:p-4 bg-gray-900 rounded-2xl text-white">
+              <p class="relative z-10 flex flex-col gap-0.5 p-5 sm:p-4 bg-gray-900 rounded-2xl text-white ">
                 Ofertas Imperdibles
               </p>
             </a>
@@ -146,8 +144,6 @@
     </div>
   </div>
 </section>
-
-
 <!-- SECTION PRODUCTS -->
 <section id="products-section" class="items-center justify-center flex-col min-h-screen hidden lg:flex md:flex"> 
   <div id="productos" class="hidden lg:block md:block">
@@ -262,7 +258,7 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
     </div>
   </div>
   
-  <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">
+  <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative md:hidden lg:block">
     <div class="mb-4 bg-gray-100 rounded p-2">
       <img src="./img/gabinete.jpg" alt="Product 3"
       class="aspect-[33/35] w-full object-contain" />
@@ -374,7 +370,7 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
         </div>
       </div>
     </div> 
-    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden ">
+    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden">
       <div class="mb-4 bg-gray-100 rounded p-2">
         <img src="./img/teclado-mecanico.webp" alt="Product 3"
         class="aspect-[33/35] w-full object-contain" />
@@ -464,24 +460,25 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
         </div>
       </div>
     </div>
-    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden">
-      <div class="mb-4 bg-gray-100 rounded p-2">
-        <img src="./img/rtx-3050.png" alt="Product 3"
-        class="aspect-[33/35] w-full object-contain" />
-      </div>
-      
-      <div>
-        <div class="flex gap-2">
-          <h5 class="text-base font-bold text-gray-800">RTX 3050</h5>
-          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
+      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative   hidden">
+        <div class="mb-4 bg-gray-100 rounded p-2">
+          <img src="./img/disco-hdd.webp" alt="Product 3"
+          class="aspect-[33/35] w-full object-contain" />
         </div>
-        <p class="text-gray-500 text-[13px] mt-2">Tarjeta de video Gigabyte RTX 3050</p>
-          <div class="flex items-center gap-2 mt-4">
-           
-            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
+        
+        <div>
+          <div class="flex gap-2">
+            <h5 class="text-base font-bold text-gray-800">Disco HDD</h5>
+            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
           </div>
+          <p class="text-gray-500 text-[13px] mt-2">Unidad de almacenamiento HDD</p>
+          <div class="flex items-center gap-2 mt-4">
+            
+          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
         </div>
       </div>
+    </div>
+  
       
 
     
@@ -513,6 +510,43 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
       Cargar Más
     </button>
   </div>
+  </div>
+</section>
+<!-- SECTION CONTACT -->
+<section id="section-contact"  >
+  <!-- Container -->
+  <div class="mx-auto max-w-7xl px-5 py-16 text-center md:px-10 md:py-20">
+    <!-- Component -->
+    <h2 class="text-3xl font-bold md:text-5xl text-red-500 ">Contacto</h2>
+    <p class="mx-auto mb-8 mt-4 max-w-lg text-white md:mb-12 lg:mb-16"> Ingresa tu información personal para ponerte en contacto con <span class="text-red-500">Unique Gamers</span> </p>
+    <!-- Form -->
+    <form name="wf-form-name" method="get" class="mx-auto mb-4 text-left sm:px-4 md:px-20">
+      <div class="mb-4 grid w-full grid-cols-2 gap-6">
+        <div>
+          <label htmlFor="name-2" class="mb-1 font-medium text-white"> Nombre: </label>
+          <input type="text" class=" block h-9 w-full rounded-md border border-solid border-red-700 px-3 py-6 text-sm text-white" placeholder="Ingresa tu nombre" required="" />
+        </div>
+        <div>
+          <label htmlFor="name-3" class="mb-1 font-medium text-white"> Apellido: </label>
+          <input type="text" class=" block h-9 w-full rounded-md border border-solid border-red-700 px-3 py-6 text-sm text-white" placeholder="Ingresa tu apellido" required="" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <label htmlFor="field" class="mb-1 font-medium text-white"> Número de telefono </label>
+        <input type="number" class="mb-4 block h-9 w-full rounded-md border border-solid border-red-700 px-3 py-6 text-sm text-white" placeholder="Ingresa tu número de telefono" />
+      </div>
+      <div class="mb-4">
+        <label htmlFor="field" class="mb-1 font-medium text-white"> Email </label>
+        <input type="email" class="mb-4 block h-9 w-full rounded-md border border-solid border-red-700 px-3 py-6 text-sm text-white" placeholder="Ingresa tu email"/>
+      </div>
+      <div class="mb-5 md:mb-6 lg:mb-8">
+        <label htmlFor="field" class="mb-1 font-medium text-white"> Mensaje </label>
+        <textarea placeholder="" maxLength="5000" name="field" class="mb-2.5 block h-auto min-h-44 w-full rounded-md border border-solid border-red-700 px-3 py-2 text-sm text-white"></textarea>
+      </div>
+      <label class="flex items-center cursor-pointer mb-1 justify-center pb-4 md:pl-5">
+      </label>
+      <input type="submit" value="¡Unete a Unique Gamers!" class="inline-block w-full rounded-md cursor-pointer bg-gray-600 px-6 py-3 text-center font-semibold text-white" />
+    </form>
   </div>
 </section>
 <script  type="module"  src="assets/index.js"></script>
