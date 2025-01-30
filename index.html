@@ -7,13 +7,13 @@
   <link href="./src/index.css" rel="stylesheet">
   <link rel="icon" href="./img/descarga.png">
 </head>
-<body  class="bg-gray-900">
+<body id="home"  class="bg-gray-900">
   <!-- HEADER -->
   <header class=" bg-gray-900">
     <div class="mx-auto max-w-screen-xl px-4 md:px-4  sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <a class="block  text-teal-600" href="#">
+          <a class="block  text-teal-600" href="#home">
             <span class="sr-only">Home</span>
             <img class="h-12" src="./img/descarga.png" alt="Logo">
           </a>
@@ -48,9 +48,17 @@
               <li>
                 <a
                   class=" transition  text-white hover:text-white/75"
+                  href="#footer"
+                >
+                  Footer
+                </a>
+              </li>
+              <li>
+                <a
+                  class=" transition  text-white hover:text-white/75"
                   href="#"
                 >
-                  Ubicación
+                
                 </a>
               </li>
             </ul>
@@ -98,7 +106,7 @@
     </div>
   </header>
   <!-- SECTION CARD-HEADER -->
-  <section class=" bg-gray-900 flex items-center justify-center flex-col  md:mt-20">
+  <section id="header"  class="bg-gray-900 flex items-center justify-center flex-col  md:mt-20">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-30 lg:grid-cols-12 text-center">
         <div class="mr-auto place-self-center lg:col-span-7 ">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-500">Tu tienda Gaming</h1>
@@ -549,9 +557,27 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
     </form>
   </div>
 </section>
+<!-- FOOTER -->
+<footer id="footer" class="block">
+  <!-- Container -->
+  <div class="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
+    <!-- Component -->
+    <div class="flex-col flex items-center">
+      <a href="#" class="mb-8 inline-block max-w-full text-black">
+        <img src="img/descarga.png" alt="" class="inline-block max-h-50" />
+      </a>
+      <div class="text-center font-semibold">
+        <a href="#about-us-section" class="inline-block px-6 py-2 font-normal text-white transition hover:text-red-600"> Nosotros </a>
+        <a href="#products-section" class="inline-block px-6 py-2 font-normal text-white transition hover:text-red-600"> Productos </a>
+        <a href="#header" class="inline-block px-6 py-2 font-normal text-white transition hover:text-red-600"> Header </a>
+        <a href="#home" class="inline-block px-6 py-2 font-normal text-white transition hover:text-red-600"> Home </a>
+      </div>
+      <div class="mb-8 mt-8 border-b border-gray-300 w-48"></div>
+      <p class="text-sm sm:text-base text-white"> © Unique Gamers 2025 Landing Page </p>
+    </div>
+  </div>
+</footer>
 <script  type="module"  src="assets/index.js"></script>
-
-
 </body>
 </html>
 
