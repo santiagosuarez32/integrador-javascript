@@ -1,0 +1,58 @@
+const productsData = [
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+  {
+    id: 1,
+    name: "Ryzen 5600",
+    precio: 12000,
+    category: "hardware",
+    cardImg: "./img/ryzen-5600.jpg",
+  },
+];
