@@ -29,3 +29,10 @@ document.getElementById("cart-button").addEventListener("click", function () {
 document.getElementById("button-close").addEventListener("click", function () {
   document.getElementById("cart-menu").classList.add("hidden");
 });
+document.getElementById("cart-button2").addEventListener("click", function () {
+  document.getElementById("cart-menu").classList.remove("hidden");
+});
+
+document.getElementById("button-close").addEventListener("click", function () {
+  document.getElementById("cart-menu").classList.add("hidden");
+});
