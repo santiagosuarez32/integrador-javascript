@@ -79,22 +79,21 @@
               >
                 Registrarse
               </a>
-              <a id="cart-button2"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 sm:hidden lg:block md:block">
+              <a id="cart-button"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 sm:hidden lg:block md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1.6-8H6.4L7 13zm-1 4a2 2 0 104 0m4 0a2 2 0 104 0m1 0a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
             </a>
           </div>
         </div>
-        <a id="cart-button"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 md:hidden lg:hidden">
+        <a id="cart-button2"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 md:hidden lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1.6-8H6.4L7 13zm-1 4a2 2 0 104 0m4 0a2 2 0 104 0m1 0a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
       </a>
-        <div class="md:hidden">
-          
+        <div class="md:hidden" >
           <button
-              class="rounded p-2  transition  bg-gray-800 text-white hover:text-white/75"
+              class="rounded p-2  transition  bg-gray-800 text-white hover:text-white/75" id="hamb-menu" 
               >
               <svg
                 class="h-5 w-5"
@@ -112,6 +111,14 @@
         </div>
       </div>
     </div>
+    <div id="menu" class="hidden md:hidden hamburger-menu absolute top-16 left-0 w-full  text-white">
+    <div class="flex flex-col items-center justify-center space-y-4 p-6 bg-gray-900 text-white">
+        <a href="#about-us-section" class="transition hover:text-gray-400">Nosotros</a>
+        <a href="#products-section" class="transition hover:text-gray-400">Productos</a>
+        <a href="#contact-section" class="transition hover:text-gray-400">Contáctanos</a>
+        <a href="#footer" class="transition hover:text-gray-400">Footer</a>
+    </div>
+</div>
   </header>
   <!-- <div id="overlay" class="hidden overlay"></div>
 <div id="cart-menu" class="cart-menu"></div> -->

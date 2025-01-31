@@ -36,3 +36,8 @@ document.getElementById("cart-button2").addEventListener("click", function () {
 document.getElementById("button-close").addEventListener("click", function () {
   document.getElementById("cart-menu").classList.add("hidden");
 });
+
+document.getElementById("hamb-menu").addEventListener("click", function () {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("hidden");
+});

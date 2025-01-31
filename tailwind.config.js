@@ -1,5 +1,6 @@
 module.exports = {
   theme: {
+    plugins: [require("tailwind-hamburgers")],
     extend: {
       animation: {
         "gradient-border": "gradientBorderAnimation 8s ease infinite",
