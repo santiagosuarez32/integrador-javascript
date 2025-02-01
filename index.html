@@ -171,7 +171,7 @@
 </section>
 <!-- SECTION PRODUCTS -->
 <section id="products-section" class="items-center justify-center flex-col min-h-screen hidden lg:flex md:flex"> 
-  <!-- <div id="productos" class="hidden lg:block md:block">
+  <div id="productos" class="hidden lg:block md:block">
     <div class="p-15 mx-auto lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 sm:mb-10 text-center">Componentes Hardware Gaming</h2>
       <div id="buttons" class="flex items-center justify-center mb-15 gap-1.5 flex-wrap  " >
@@ -213,298 +213,8 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
 </span>
 </a>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
-        <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative" data-category="hardware">
-          
-          <div class="mb-4 bg-gray-100 rounded p-2">
-            
-            <img src="./img/ryzen-5600.jpg" alt="Product 1"
-            class="aspect-[33/35] w-full object-contain" />
-          </div>
-  
-          
-          <div>
-            <div class="flex gap-2">
-              <h5 class="text-base font-bold text-gray-800">AMD Ryzen</h5>
-              <h6 class="text-base text-gray-800 font-bold ml-auto">$10</h6>
-            </div>
-            <p class="text-gray-500 text-[13px] mt-2">Procesador AMD Ryzen 5600G</p>
-            <div class="flex items-center gap-2 mt-4">
-             
-            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative" data-category="hardware">
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/memory.jpg" alt="Product 2"
-            class="aspect-[33/35] w-full object-contain" />
-        </div>
-
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Memoria Ram</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$12</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Memoria RAM 3200Mhz de 16 GB</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-    <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative" data-category="hardware" >
-      <div class="mb-4 bg-gray-100 rounded p-2">
-        <img src="./img/placa-madre.jpg" alt="Product 3"
-        class="aspect-[33/35] w-full object-contain" />
-      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6" id="products-container">
       
-      <div>
-        <div class="flex gap-2">
-          <h5 class="text-base font-bold text-gray-800">Placa Madre</h5>
-          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-        </div>
-        <p class="text-gray-500 text-[13px] mt-2">Placa madre ideal para tu Set up gamer</p>
-        <div class="flex items-center gap-2 mt-4">
-          
-        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-      </div>
-    </div>
-  </div>
-  <div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative md:hidden lg:block" data-category="software" >
-    <div class="mb-4 bg-gray-100 rounded p-2">
-      <img src="./img/gabinete.jpg" alt="Product 3"
-      class="aspect-[33/35] w-full object-contain" />
-    </div>
-    
-    <div>
-      <div class="flex gap-2">
-        <h5 class="text-base font-bold text-gray-800">Gabinete</h5>
-        <h6 class="text-base text-gray-800 font-bold ml-auto">$12</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Gabinete para ensamblar tu PC Gamer</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-              <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-            </div>
-          </div>
-        </div>
-      <div  id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="hardware" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/tarjeta-de-video.jpg" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Tarjeta Gráfica</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$15</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Tarjeta de video gaming 1650</p>
-          <div class="flex items-center gap-2 mt-4">
-           
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-    <div id="hidden-card"  class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="hardware" >
-      <div class="mb-4 bg-gray-100 rounded p-2">
-        <img src="./img/fuente-de-poder.webp" alt="Product 3"
-        class="aspect-[33/35] w-full object-contain" />
-      </div>
-      
-      <div>
-        <div class="flex gap-2">
-          <h5 class="text-base font-bold text-gray-800">Fuente de poder</h5>
-          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-        </div>
-        <p class="text-gray-500 text-[13px] mt-2">Fuente de poder certificada 500W</p>
-        <div class="flex items-center gap-2 mt-4">
-          
-            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="hardware" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/m.2.png" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Disco M.2</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Unidad de almacenamiento M.2</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-      <div  id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="hardware" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/disco-ssd.jpg" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Disco SSD</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Unidad de almacenamiento SSD</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-      </div>
-      <div  id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="software" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/cooler.jpg" alt="Product 3"
-            class="aspect-[33/35] w-full object-contain" />
-        </div>
-
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Cooler CPU</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Cooler ideal para refrigeración</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div> 
-    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="software" >
-      <div class="mb-4 bg-gray-100 rounded p-2">
-        <img src="./img/teclado-mecanico.webp" alt="Product 3"
-        class="aspect-[33/35] w-full object-contain" />
-      </div>
-      
-      <div>
-        <div class="flex gap-2">
-          <h5 class="text-base font-bold text-gray-800">Teclado</h5>
-          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-        </div>
-        <p class="text-gray-500 text-[13px] mt-2">Teclado mecánico ideal para tu Set up gamer</p>
-        <div class="flex items-center gap-2 mt-4">
-   
-        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-      </div>
-    </div>
-  </div>
-  <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden" data-category="software" >
-    <div class="mb-4 bg-gray-100 rounded p-2">
-      <img src="./img/mouse.jpeg" alt="Product 3"
-      class="aspect-[33/35] w-full object-contain" />
-    </div>
-
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Mouse gamer</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Mouse gamer de la mas alta calidad</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-    <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden" data-category="software" >
-      <div class="mb-4 bg-gray-100 rounded p-2">
-        <img src="./img/auriculares.webp" alt="Product 3"
-        class="aspect-[33/35] w-full object-contain" />
-      </div>
-      
-      <div>
-        <div class="flex gap-2">
-          <h5 class="text-base font-bold text-gray-800">Auriculares</h5>
-          <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-        </div>
-        <p class="text-gray-500 text-[13px] mt-2">Auriculares para vivir una experiencia única</p>
-        <div class="flex items-center gap-2 mt-4">
-          
-        <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-      </div>
-    </div>
-  </div>
-  <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative hidden" data-category="hardware" >
-    <div class="mb-4 bg-gray-100 rounded p-2">
-      <img src="./img/intel.webp" alt="Product 3"
-      class="aspect-[33/35] w-full object-contain" />
-    </div>
-    
-    <div>
-      <div class="flex gap-2">
-        <h5 class="text-base font-bold text-gray-800">Intel i13</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Procesador Intel 13na generación</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-            <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative   hidden" data-category="hardware">
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/disco-hdd.webp" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Disco HDD</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Unidad de almacenamiento HDD</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative   hidden" data-category="hardware" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/disco-hdd.webp" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Disco HDD</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Unidad de almacenamiento HDD</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
-      <div id="hidden-card" class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative  hidden" data-category="software" >
-        <div class="mb-4 bg-gray-100 rounded p-2">
-          <img src="./img/monitor.webp" alt="Product 3"
-          class="aspect-[33/35] w-full object-contain" />
-        </div>
-        
-        <div>
-          <div class="flex gap-2">
-            <h5 class="text-base font-bold text-gray-800">Monitor</h5>
-            <h6 class="text-base text-gray-800 font-bold ml-auto">$14</h6>
-          </div>
-          <p class="text-gray-500 text-[13px] mt-2">Monitor para tener la mejor experiencia gaming</p>
-          <div class="flex items-center gap-2 mt-4">
-            
-          <button type="button" class="text-sm px-2 h-9 font-semibold w-full bg-red-600 hover:bg-red-700 text-white tracking-wide ml-auto outline-none border-none rounded-lg">Agregar</button>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 </div>
@@ -514,7 +224,7 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
       Cargar Más
     </button>
   </div>
-  </div> -->
+  </div>
 </section>
 <!-- SECTION CONTACT -->
 <section id="section-contact">
@@ -660,7 +370,8 @@ class="group relative inline-block text-sm font-medium text-white focus:outline-
     </div>
   </div>
 </div>
-<script  type="module"  src="assets/index.js"></script>
+<script   src="assets/data.js"></script>
+<script  src="assets/index.js"></script>
 </body>
 </html>
 
