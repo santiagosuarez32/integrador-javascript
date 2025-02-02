@@ -134,7 +134,7 @@ const divideProductsInParts = (size) => {
 
 // console.log(productsData.slice(0, 6));
 
-const PRODUCTS_SIZE = 6;
+const PRODUCTS_SIZE = 4;
 
 const appState = {
   products: divideProductsInParts(PRODUCTS_SIZE),
@@ -142,6 +142,6 @@ const appState = {
   currentProductsIndex: 0,
 };
 
-console.log(appState);
+console.log({ appState });
 
 // console.log(appState.productsLimit);

@@ -41,7 +41,7 @@
 //   const menu = document.getElementById("menu");
 //   menu.classList.toggle("hidden");
 // });
-
+const showMoreBtn = document.querySelector("#load-button");
 const productsContainer = document.querySelector("#products-container");
 
 const createProductTemplate = (product) => {
@@ -65,11 +65,24 @@ const createProductTemplate = (product) => {
 };
 
 const renderProducts = (products) => {
-  productsContainer.innerHTML = products.map(createProductTemplate).join("");
+  productsContainer.innerHTML += products.map(createProductTemplate).join("");
+};
+
+const showMoreProducts = () => {
+  appState.currentProductsIndex += 1;
+  // console.log(appState.products[appState.currentProductsIndex]);
+  let { products, currentProductsIndex, productLimit } = appState;
+
+  renderProducts(products[currentProductsIndex]);
+
+  if (currentProductsIndex === productLimit - 1) {
+    showMoreBtn.classList.add("hidden");
+  }
 };
 
 const init = () => {
-  renderProducts(productsData);
+  renderProducts(appState.products[0]);
+  showMoreBtn.addEventListener("click", showMoreProducts);
 };
 
 init();
