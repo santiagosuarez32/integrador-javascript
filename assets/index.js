@@ -1,46 +1,3 @@
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const loadMoreButton = document.getElementById("load-more-button");
-//   const cards = document.querySelectorAll("#hidden-card");
-//   let currentIndex = 0;
-
-//   loadMoreButton.addEventListener("click", function () {
-//     for (let i = 0; i < 4 && currentIndex < cards.length; i++) {
-//       cards[currentIndex].classList.remove("hidden");
-//       currentIndex++;
-//     }
-//     if (currentIndex >= cards.length) {
-//       loadMoreButton.style.display = "none";
-//     }
-//   });
-// });
-
-// const cartButton = document
-//   .getElementById("cart-button")
-//   .addEventListener("click", function() );
-
-// document.getElementById("cart-button").addEventListener("click", function () {
-//   document.getElementById("cart-menu").classList.remove("hidden");
-// });
-
-// document.getElementById("button-close").addEventListener("click", function () {
-//   document.getElementById("cart-menu").classList.add("hidden");
-// });
-// document.getElementById("cart-button2").addEventListener("click", function () {
-//   document.getElementById("cart-menu").classList.remove("hidden");
-// });
-
-// document.getElementById("button-close").addEventListener("click", function () {
-//   document.getElementById("cart-menu").classList.add("hidden");
-// });
-
-// document.getElementById("hamb-menu").addEventListener("click", function () {
-//   const menu = document.getElementById("menu");
-//   menu.classList.toggle("hidden");
-// });
 const showMoreBtn = document.querySelector("#load-button");
 const productsContainer = document.querySelector("#products-container");
 
@@ -71,11 +28,11 @@ const renderProducts = (products) => {
 const showMoreProducts = () => {
   appState.currentProductsIndex += 1;
   // console.log(appState.products[appState.currentProductsIndex]);
-  let { products, currentProductsIndex, productLimit } = appState;
+  let { products, currentProductsIndex, productsLimit } = appState;
 
   renderProducts(products[currentProductsIndex]);
 
-  if (currentProductsIndex === productLimit - 1) {
+  if (currentProductsIndex === productsLimit - 1) {
     showMoreBtn.classList.add("hidden");
   }
 };
