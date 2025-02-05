@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.category.active {
+  background-color: #FF0000; /* El color rojo de fondo */
+}
+
 
 /* @layer utilities {
     #card-wrapper{

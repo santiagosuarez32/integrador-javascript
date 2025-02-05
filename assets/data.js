@@ -60,7 +60,7 @@ const productsData = [
     name: "Gabinete",
     precio: 12000,
     descripcion: "Ensambla y organiza tus componentes Gaming",
-    category: "software",
+    category: "perifericos",
     cardImg: "assets/img/products/gabinete.jpg",
   },
   {
@@ -84,7 +84,7 @@ const productsData = [
     name: "Monitor",
     precio: 12000,
     descripcion: "Ideal para tener una mejor experiencia Gaming",
-    category: "software",
+    category: "perifericos",
     cardImg: "assets/img/products/monitor.webp",
   },
   {
@@ -92,7 +92,7 @@ const productsData = [
     name: "Mouse",
     precio: 12000,
     descripcion: "Mejora tu jugabilidad y competitividad",
-    category: "software",
+    category: "perifericos",
     cardImg: "assets/img/products/mouse.jpeg",
   },
   {
@@ -124,8 +124,8 @@ const productsData = [
     id: 16,
     name: "Teclado Gamer",
     precio: 12000,
-    descripcion: "Mejor jugabilidad y diseño",
-    category: "software",
+    descripcion: "Mejor jugabilidad y diseño en tus juegos",
+    category: "perifericos",
     cardImg: "assets/img/products/teclado-mecanico.webp",
   },
 ];
@@ -143,12 +143,13 @@ const divideProductsInParts = (size) => {
 
 // console.log(productsData.slice(0, 6));
 
-const PRODUCTS_SIZE = 4;
+const PRODUCTS_SIZE = 8;
 
 const appState = {
   products: divideProductsInParts(PRODUCTS_SIZE),
   productsLimit: divideProductsInParts(PRODUCTS_SIZE).length,
   currentProductsIndex: 0,
+  activeFilter: null,
 };
 
 console.log({ appState });

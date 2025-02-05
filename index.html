@@ -170,61 +170,35 @@
   </div>
 </section>
 <!-- SECTION PRODUCTS -->
-<section id="products-section" class="items-center justify-center flex-col min-h-screen hidden lg:flex md:flex"> 
+<section id="products" class="items-center justify-center flex-col min-h-screen hidden lg:flex md:flex"> 
   <div id="productos" class="hidden lg:block md:block">
     <div class="p-15 mx-auto lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-sm:max-w-sm">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 sm:mb-10 text-center">Componentes Hardware Gaming</h2>
-      <div id="buttons" class="flex items-center justify-center mb-15 gap-1.5 flex-wrap  " >
-    <a
-    class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring active:text-white"
-    data-category="todos"
-   
-   >
-   <span class="absolute inset-0 border border-current"></span>
-   <span
-   class="block border border-current bg-red-600 px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
-   >
-  Hardware
-    </span>
-   </a>
-    <a
-    class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring active:text-white"
-    data-category="todos"
-  
-   >
-   <span class="absolute inset-0 border border-current"></span>
-   <span
-   class="block border border-current bg-red-600 px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
-  
-   >
-  Todos
-    </span>
-   </a>
-<a
-class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring active:text-white"
-
->
-<span class="absolute inset-0 border border-current"></span>
-<span
-  class="block border border-current bg-red-600 px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
-
->
-  Perifericos
-</span>
-</a>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6" id="products-container">
-      
+      <div class="flex items-center justify-center mb-15 gap-1.5 flex-col">
+        <div class="flex items-center justify-center mb-15 gap-1.5 flex-wrap">
+          <div class="group relative text-sm font-medium text-white  flex categories">
+            <button class="block border border-current   px-12 py-3 category" data-category="hardware">
+              Hardware
+            </button>
+            <button class="block border border-current b px-12 py-3 category active">
+              Todos
+            </button>
+            <button class="block border border-current px-12 py-3 category" data-category="perifericos">
+              Perifericos
+            </button>
+          </div>
+        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6 products-container">
   </div>
+  <div class="p-7 load-button">
+    <div class="p-2">
+      <button class="bg-red-500 hover:bg-red-700 text-white font-bold   py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
+        Cargar Más
+      </button>
+    </div>
+    </div>
 </div>
 </div>
-  <div class="p-7" id="load-button">
-  <div class="p-2">
-    <button class="bg-red-500 hover:bg-red-700 text-white font-bold   py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">
-      Cargar Más
-    </button>
-  </div>
-  </div>
 </section>
 <!-- SECTION CONTACT -->
 <section id="section-contact">

@@ -1,9 +1,13 @@
-const showMoreBtn = document.querySelector("#load-button");
-const productsContainer = document.querySelector("#products-container");
+const showMoreBtn = document.querySelector(".load-button");
+const productsContainer = document.querySelector(".products-container");
+const categoriesContainer = document.querySelector(".categories");
+const categoriesList = document.querySelectorAll(".category");
+
+// console.log(categoriesList);
 
 const createProductTemplate = (product) => {
-  const { id, name, precio, descripcion, cardImg } = product;
-  return `<div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative">    
+  const { id, name, precio, category, descripcion, cardImg } = product;
+  return `<div class="bg-white rounded-xl p-4 cursor-pointer hover:-translate-y-1 transition-all relative product">    
           <div class="mb-4 bg-gray-100 rounded p-2">
           <img src="${cardImg}" alt="${name}" class="aspect-[33/35] w-full object-contain" />
           </div>
@@ -37,9 +41,51 @@ const showMoreProducts = () => {
   }
 };
 
+const applyFilter = (e) => {
+  if (!isInactiveFilterBtn(e.target)) return;
+  changeFilterState(e.target);
+  productsContainer.innerHTML = "";
+
+  if (appState.activeFilter) {
+    const filteredProducts = productsData.filter(
+      (product) => product.category === appState.activeFilter
+    );
+    renderProducts(filteredProducts);
+    appState.currentProductsIndex = 0;
+    return;
+  }
+
+  renderProducts(appState.products[0]);
+};
+
+const changeBtnActiveState = (activeFilter) => {
+  const categories = [...categoriesList];
+  categories.forEach((categoryBtn) => {
+    if (categoryBtn.dataset.category !== activeFilter) {
+      categoryBtn.classList.remove("active");
+      return;
+    }
+    categoryBtn.classList.add("active");
+  });
+};
+
+const isInactiveFilterBtn = (element) => {
+  return (
+    element.classList.contains("category") &&
+    !element.classList.contains("active")
+  );
+};
+
+const changeFilterState = (btn) => {
+  appState.activeFilter = btn.dataset.category;
+  changeBtnActiveState(appState.activeFilter);
+  // console.log(appState.activeFilter);
+};
+
 const init = () => {
   renderProducts(appState.products[0]);
   showMoreBtn.addEventListener("click", showMoreProducts);
+  categoriesContainer.addEventListener("click", applyFilter);
 };
 
 init();
