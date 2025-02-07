@@ -105,9 +105,9 @@ const addCartMobile = () => {
   cartMenu.classList.remove("hidden");
 };
 
-const closeCartMobile = () => {
-  cartMenu.classList.add("hidden");
-};
+// const closeCartMobile = () => {
+//   cartMenu.classList.add("hidden");
+// };
 
 const openMenuHamb = () => {
   menu.classList.toggle("hidden");
@@ -121,7 +121,7 @@ const init = () => {
   cartBtn.addEventListener("click", addCart);
   closeBtn.addEventListener("click", closeCart);
   menuBtn.addEventListener("click", addCartMobile);
-  closeBtn.addEventListener("click", closeCartMobile);
+  // closeBtn.addEventListener("click", closeCartMobile);
   hambMenu.addEventListener("click", openMenuHamb);
 };
 
