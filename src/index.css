@@ -1,28 +1,29 @@
 @import "tailwindcss";
 
 .category.active {
-  background-color: #FF0000; /* El color rojo de fondo */
+  background-color: #FF0000;
+}
+
+.open-cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; 
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
 }
 
 
-/* @layer utilities {
-    #card-wrapper{
-        @apply relative bg-gradient-to-b from-slate-700 to-slate-800
-    }
-
-    #card-wrapper::before{
-        background: conic-gradient(
-            rgba(244, 114,182, 0.4) 0deg,
-            rgba(192,132,252,0.4)0deg
-            transparent 80deg
-        );
-
-      @apply absolute h-[100%] w-[100%] content-[''] animate-border-spin;
-    }
-
-    #card-content{
-
-    } */
     @keyframes gradientBorderAnimation {
         0% {
           background-position: 0% 50%;

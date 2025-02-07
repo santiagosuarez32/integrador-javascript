@@ -18,7 +18,7 @@
             <img class="h-12" src="assets/img/descarga.png" alt="Logo">
           </a>
         </div>
-        <div class="hidden md:block">
+        <div class="hidden md:block ">
           <nav aria-label="Global">
             <ul class="flex items-center gap-6 text-sm">
               <li>
@@ -79,21 +79,21 @@
               >
                 Registrarse
               </a>
-              <a id="cart-button"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 sm:hidden lg:block md:block">
+              <a  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 sm:hidden lg:block md:block cart-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1.6-8H6.4L7 13zm-1 4a2 2 0 104 0m4 0a2 2 0 104 0m1 0a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
             </a>
           </div>
         </div>
-        <a id="cart-button2"  class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 md:hidden lg:hidden">
+        <a   class="rounded p-2 text-white hover:text-white/75 ml-8 md:ml-2 md:hidden lg:hidden cart-button2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1.6-8H6.4L7 13zm-1 4a2 2 0 104 0m4 0a2 2 0 104 0m1 0a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
       </a>
-        <div class="md:hidden" >
+        <div class="md:hidden open-hamb" >
           <button
-              class="rounded p-2  transition  bg-gray-800 text-white hover:text-white/75" id="hamb-menu" 
+              class="rounded p-2  transition  bg-gray-800 text-white hover:text-white/75"  
               >
               <svg
                 class="h-5 w-5"
@@ -111,19 +111,20 @@
         </div>
       </div>
     </div>
-    <div id="menu" class="hidden md:hidden hamburger-menu absolute top-16 left-0 w-full  text-white">
+    <div class="hidden md:hidden hamb-menu absolute top-16 left-0 w-full  text-white">
     <div class="flex flex-col items-center justify-center space-y-4 p-6 bg-gray-900 text-white">
         <a href="#about-us-section" class="transition hover:text-gray-400">Nosotros</a>
         <a href="#products-section" class="transition hover:text-gray-400">Productos</a>
         <a href="#contact-section" class="transition hover:text-gray-400">Contáctanos</a>
         <a href="#footer" class="transition hover:text-gray-400">Footer</a>
     </div>
+    <!-- <div class="overlay"></div> -->
 </div>
   </header>
-  <!-- <div id="overlay" class="hidden overlay"></div>
-<div id="cart-menu" class="cart-menu"></div> -->
+   <!-- <div id="overlay" class="hidden overlay"></div>
+<div id="cart-menu" class="cart-menu"></div>  -->
   <!-- SECTION CARD-HEADER -->
-  <section id="header"  class="bg-gray-900 flex items-center justify-center flex-col  md:mt-20">
+  <section id="header"  class="bg-gray-900 flex items-center justify-center flex-col  md:mt-20 lg:mt-5">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-30 lg:grid-cols-12 text-center">
         <div class="mr-auto place-self-center lg:col-span-7 ">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-500">Tu tienda Gaming</h1>
@@ -254,7 +255,7 @@
     </div>
   </div>
 </footer>
-<div id="cart-menu" class="hidden relative z-100" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+<div class="hidden relative z-100 cart" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
   <div class="fixed inset-0 bg-gray-500/75 transition-opacity" aria-hidden="true"></div>
   <div class="fixed inset-0 overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
@@ -265,7 +266,7 @@
               <div class="flex items-start justify-between">
                 <h2 class="text-lg font-medium text-white" id="slide-over-title">Carrito</h2>
                 <div class="ml-3 flex h-7 items-center">
-                  <button type="button" id="button-close" class="relative -m-2 p-2 z-20 text-black hover:text-gray-500">
+                  <button type="button" class="relative -m-2 p-2 z-20 text-black hover:text-gray-500 close-btn">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Close panel</span>
                     <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -275,55 +276,7 @@
                 </div>
               </div>
               <div class="mt-8">
-                <div class="flow-root">
-                  <ul role="list" class="-my-6 divide-y divide-gray-200">
-                    <!-- Aquí van los elementos del carrito -->
-                    <ul role="list" class="-my-6 divide-y divide-gray-200">
-                      <li class="flex py-6">
-                        <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
-                          <img src="https://tailwindui.com/plus/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="size-full object-cover">
-                        </div>
-                        <div class="ml-4 flex flex-1 flex-col">
-                          <div>
-                            <div class="flex justify-between text-base font-medium text-white">
-                              <h3>
-                                <a href="#">Throwback Hip Bag</a>
-                              </h3>
-                              <p class="ml-4">$90.00</p>
-                            </div>
-                            <p class="mt-1 text-sm text-white">Salmon</p>
-                          </div>
-                          <div class="flex flex-1 items-end justify-between text-sm">
-                            <p class="text-white">Qty 1</p>
-                            <div class="flex">
-                              <button type="button" class="font-medium text-red-600 hover:text-red-500">Remove</button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="flex py-6">
-                        <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
-                          <img src="https://tailwindui.com/plus/img/ecommerce-images/shopping-cart-page-04-product-02.jpg" alt="Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch." class="size-full object-cover">
-                        </div>
-                        <div class="ml-4 flex flex-1 flex-col">
-                          <div>
-                            <div class="flex justify-between text-base font-medium text-white">
-                              <h3>
-                                <a href="#">Medium Stuff Satchel</a>
-                              </h3>
-                              <p class="ml-4">$32.00</p>
-                            </div>
-                            <p class="mt-1 text-sm text-white">Blue</p>
-                          </div>
-                          <div class="flex flex-1 items-end justify-between text-sm">
-                            <p class="text-white">Qty 1</p>
-                            <div class="flex">
-                              <button type="button" class="font-medium text-red-600 hover:text-red-500">Remove</button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                <div class="flow-root cart-container">
                   </ul>
                 </div>
               </div>
@@ -331,7 +284,7 @@
             <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
               <div class="flex justify-between text-base font-medium text-white">
                 <p>Total</p>
-                <p>$262.00</p>
+                <p></p>
               </div>
               <div class="mt-6">
                 <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-red-600 px-6 py-3 text-base font-medium text-white shadow-xs hover:bg-red-700">Comprar</a>

@@ -2,8 +2,16 @@ const showMoreBtn = document.querySelector(".load-button");
 const productsContainer = document.querySelector(".products-container");
 const categoriesContainer = document.querySelector(".categories");
 const categoriesList = document.querySelectorAll(".category");
-
-// console.log(categoriesList);
+const cartBtn = document.querySelector(".cart-button");
+const productsCart = document.querySelector(".cart-container");
+const closeBtn = document.querySelector(".close-btn");
+/* Carrito Desktop */
+const cartMenu = document.querySelector(".cart");
+const overlay = document.querySelector(".overlay");
+/* Menu burguer mobile */
+const menuBtn = document.querySelector(".cart-button2");
+const hambMenu = document.querySelector(".open-hamb");
+const menu = document.querySelector(".hamb-menu");
 
 const createProductTemplate = (product) => {
   const { id, name, precio, category, descripcion, cardImg } = product;
@@ -31,7 +39,6 @@ const renderProducts = (products) => {
 
 const showMoreProducts = () => {
   appState.currentProductsIndex += 1;
-  // console.log(appState.products[appState.currentProductsIndex]);
   let { products, currentProductsIndex, productsLimit } = appState;
 
   renderProducts(products[currentProductsIndex]);
@@ -79,13 +86,92 @@ const isInactiveFilterBtn = (element) => {
 const changeFilterState = (btn) => {
   appState.activeFilter = btn.dataset.category;
   changeBtnActiveState(appState.activeFilter);
-  // console.log(appState.activeFilter);
+  if (!appState.activeFilter) {
+    showMoreBtn.classList.remove("hidden");
+    return;
+  }
+  showMoreBtn.classList.add("hidden");
+};
+
+const closeCart = () => {
+  cartMenu.classList.add("hidden");
+};
+
+const addCart = () => {
+  cartMenu.classList.remove("hidden");
+};
+
+const addCartMobile = () => {
+  cartMenu.classList.remove("hidden");
+};
+
+const closeCartMobile = () => {
+  cartMenu.classList.add("hidden");
+};
+
+const openMenuHamb = () => {
+  menu.classList.toggle("hidden");
 };
 
 const init = () => {
   renderProducts(appState.products[0]);
   showMoreBtn.addEventListener("click", showMoreProducts);
   categoriesContainer.addEventListener("click", applyFilter);
+
+  cartBtn.addEventListener("click", addCart);
+  closeBtn.addEventListener("click", closeCart);
+  menuBtn.addEventListener("click", addCartMobile);
+  closeBtn.addEventListener("click", closeCartMobile);
+  hambMenu.addEventListener("click", openMenuHamb);
 };
 
 init();
+
+/* <ul role="list" class="-my-6 divide-y divide-gray-200">
+                    <!-- Aquí van los elementos del carrito -->
+                    <ul role="list" class="-my-6 divide-y divide-gray-200">
+                      <li class="flex py-6">
+                        <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
+                          <img src="" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="ml-4 flex flex-1 flex-col">
+                          <div>
+                            <div class="flex justify-between text-base font-medium text-white">
+                              <h3>
+                                <a href="#"></a>
+                              </h3>
+                              <p class="ml-4"></p>
+                            </div>
+                            <p class="mt-1 text-sm text-white"></p>
+                          </div>
+                          <div class="flex flex-1 items-end justify-between text-sm">
+                            <p class="text-white"></p>
+                            <div class="flex">
+                              <button type="button" class="font-medium text-red-600 hover:text-red-500">Remove</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="flex py-6">
+                        <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
+                          <img src="" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="ml-4 flex flex-1 flex-col">
+                          <div>
+                            <div class="flex justify-between text-base font-medium text-white">
+                              <h3>
+                                <a href="#"></a>
+                              </h3>
+                              <p class="ml-4"></p>
+                            </div>
+                            <p class="mt-1 text-sm text-white"></p>
+                          </div>
+                          <div class="flex flex-1 items-end justify-between text-sm">
+                            <p class="text-white"></p>
+                            <div class="flex">
+                              <button type="button" class="font-medium text-red-600 hover:text-red-500">Remove</button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul> */

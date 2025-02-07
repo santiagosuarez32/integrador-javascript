@@ -105,19 +105,19 @@ const productsData = [
   },
   {
     id: 14,
-    name: "Liquid Cooling",
+    name: "Cámara PC",
     precio: 1200,
     descripcion: "Ideal para refrigerar tus componentes",
-    category: "hardware",
-    cardImg: "assets/img/products/refrigeracion.jpg",
+    category: "perifericos",
+    cardImg: "assets/img/products/camara.jpg",
   },
   {
     id: 15,
-    name: "RTX 3050",
+    name: "Microfono PC",
     precio: 12000,
     descripcion: "Tarjeta de video potente y ideal para gaming",
-    category: "hardware",
-    cardImg: "assets/img/products/rtx-3050.png",
+    category: "perifericos",
+    cardImg: "assets/img/products/microfono.jpg",
   },
 
   {
@@ -139,11 +139,7 @@ const divideProductsInParts = (size) => {
   return productList;
 };
 
-// console.log(divideProductsInParts(6));
-
-// console.log(productsData.slice(0, 6));
-
-const PRODUCTS_SIZE = 8;
+const PRODUCTS_SIZE = 4;
 
 const appState = {
   products: divideProductsInParts(PRODUCTS_SIZE),
@@ -153,5 +149,3 @@ const appState = {
 };
 
 console.log({ appState });
-
-// console.log(appState.productsLimit);
