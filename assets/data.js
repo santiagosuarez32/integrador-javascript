@@ -2,7 +2,7 @@ const productsData = [
   {
     id: 1,
     name: "Auriculares",
-    precio: 12000,
+    precio: 800,
     descripcion: "Auriculares para tener la mejor experiencia gamer",
     category: "perifericos",
     cardImg: "assets/img/products/auriculares.webp",
@@ -10,7 +10,7 @@ const productsData = [
   {
     id: 2,
     name: "Cooler CPU",
-    precio: 12000,
+    precio: 760,
     descripcion: "Ideal para la refrigeración y mantenimiento del cpu",
     category: "hardware",
     cardImg: "assets/img/products/cooler.jpg",
@@ -18,7 +18,7 @@ const productsData = [
   {
     id: 3,
     name: "Pad Gamer",
-    precio: 12000,
+    precio: 330,
     descripcion: "Ideal para tener la mayor comodidad en tu set-up",
     category: "perifericos",
     cardImg: "assets/img/products/pad.jpg",
@@ -26,7 +26,7 @@ const productsData = [
   {
     id: 4,
     name: "Disco HDD",
-    precio: 1200220,
+    precio: 560,
     descripcion: "Adquiere mayor velocidad de lectura en tu Pc",
     category: "hardware",
     cardImg: "assets/img/products/disco-hdd.webp",
@@ -34,7 +34,7 @@ const productsData = [
   {
     id: 5,
     name: "Disco SSD",
-    precio: 12000,
+    precio: 670,
     descripcion: "La mejor opción si deseas tener velocidad en tu Pc",
     category: "hardware",
     cardImg: "assets/img/products/disco-ssd.jpg",
@@ -42,7 +42,7 @@ const productsData = [
   {
     id: 6,
     name: "Fuente",
-    precio: 12000,
+    precio: 780,
     descripcion: "Alimenta y optimiza tus componentes con esta fuente",
     category: "hardware",
     cardImg: "assets/img/products/fuente-de-poder.webp",
@@ -50,7 +50,7 @@ const productsData = [
   {
     id: 7,
     name: "Intel I13",
-    precio: 12000,
+    precio: 653,
     descripcion: "Obtiene la mayor velocidad en tu Pc con esta opción",
     category: "hardware",
     cardImg: "assets/img/products/intel.webp",
@@ -58,7 +58,7 @@ const productsData = [
   {
     id: 8,
     name: "Gabinete",
-    precio: 12000,
+    precio: 700,
     descripcion: "Ensambla y organiza tus componentes Gaming",
     category: "perifericos",
     cardImg: "assets/img/products/gabinete.jpg",
@@ -66,7 +66,7 @@ const productsData = [
   {
     id: 9,
     name: "Tarjeta de video",
-    precio: 12000,
+    precio: 800,
     descripcion: "Disfruta de los mejores juegos con esta opción",
     category: "hardware",
     cardImg: "assets/img/products/tarjeta-de-video.jpg",
@@ -74,7 +74,7 @@ const productsData = [
   {
     id: 10,
     name: "Memoria Ram",
-    precio: 12000,
+    precio: 670,
     descripcion: "Obtiene el mejor desempeño en tus juegos",
     category: "hardware",
     cardImg: "assets/img/products/memory.jpg",
@@ -82,7 +82,7 @@ const productsData = [
   {
     id: 11,
     name: "Monitor",
-    precio: 12000,
+    precio: 700,
     descripcion: "Ideal para tener una mejor experiencia Gaming",
     category: "perifericos",
     cardImg: "assets/img/products/monitor.webp",
@@ -90,7 +90,7 @@ const productsData = [
   {
     id: 12,
     name: "Mouse",
-    precio: 12000,
+    precio: 820,
     descripcion: "Mejora tu jugabilidad y competitividad",
     category: "perifericos",
     cardImg: "assets/img/products/mouse.jpeg",
@@ -98,7 +98,7 @@ const productsData = [
   {
     id: 13,
     name: "Placa madre",
-    precio: 12000,
+    precio: 125,
     descripcion: "Mayor compatibilidad con nuevos componentes",
     category: "hardware",
     cardImg: "assets/img/products/placa-madre.jpg",
@@ -106,7 +106,7 @@ const productsData = [
   {
     id: 14,
     name: "Cámara PC",
-    precio: 1200,
+    precio: 350,
     descripcion: "Ideal para refrigerar tus componentes",
     category: "perifericos",
     cardImg: "assets/img/products/camara.jpg",
@@ -114,7 +114,7 @@ const productsData = [
   {
     id: 15,
     name: "Microfono PC",
-    precio: 12000,
+    precio: 170,
     descripcion: "Tarjeta de video potente y ideal para gaming",
     category: "perifericos",
     cardImg: "assets/img/products/microfono.jpg",
@@ -123,7 +123,7 @@ const productsData = [
   {
     id: 16,
     name: "Teclado Gamer",
-    precio: 12000,
+    precio: 220,
     descripcion: "Mejor jugabilidad y diseño en tus juegos",
     category: "perifericos",
     cardImg: "assets/img/products/teclado-mecanico.webp",
@@ -148,4 +148,4 @@ const appState = {
   activeFilter: null,
 };
 
-console.log({ appState });
+// console.log({ appState });
