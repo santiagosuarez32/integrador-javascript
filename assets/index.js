@@ -142,7 +142,7 @@ const getCartTotal = () => {
     (acc, cur) => acc + Number(cur.price) * cur.quantity,
     0
   );
-  console.log(total);
+  // console.log(total);
   return total;
 };
 
