@@ -4,19 +4,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "routes": [
-    {
-      "src": "/index.js",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/index.css",
-      "dest": "/index.css"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    }
   ]
 }
