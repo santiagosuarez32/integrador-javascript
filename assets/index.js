@@ -28,7 +28,7 @@ const createProductTemplate = (product) => {
           <div>
             <div class="flex gap-2">
               <h5 class="text-base font-bold text-gray-800">${name}</h5>
-              <h6 class="text-base text-gray-800 font-bold ml-auto">${precio}</h6>
+              <h6 class="text-base text-gray-800 font-bold ml-auto">$${precio}</h6>
             </div>
             <p class="text-gray-500 text-[13px] mt-2">${descripcion}</p>
             <div class="flex items-center gap-2 mt-4">
